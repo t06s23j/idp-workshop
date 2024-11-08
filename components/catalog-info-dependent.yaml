@@ -46,6 +46,6 @@ spec:
     - spotify
   providesApis:
     - petstore
- dependsOn:
-   - component:default/shreyab-service
- system: shreyab-system
+  dependsOn:
+      - component:default/shreyab-service
+  system: shreyab-system
