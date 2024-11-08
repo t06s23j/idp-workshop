@@ -1,9 +1,9 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: yournamehere-service-dependency
+  name: shreyab-service-dependency
   description: |
-    My Example service which has something to do with APIs and database.
+    My Example harness IDP service which has something to do with APIs and database.
   links:
     - title: Website
       url: http://harness.io
@@ -37,7 +37,7 @@ metadata:
     #jira/project-key: IDP
     ## Jira plugin - End
   tags:
-    - yournamehere
+    - shreyab
 spec:
   type: service
   owner: change-value
@@ -46,6 +46,6 @@ spec:
     - spotify
   providesApis:
     - petstore
-#  dependsOn:
-#    - component:default/yournamehere-service
-#  system: yournamehere-system
+ dependsOn:
+   - component:default/shreyab-service
+ system: shreyab-system
